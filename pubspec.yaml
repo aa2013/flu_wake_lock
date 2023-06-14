@@ -2,7 +2,7 @@ name: flu_wake_lock
 description: >-2
   Plugin that allows you to keep the device screen awake, i.e. prevent the screen from sleeping on
   Android and iOS.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/dualskana/flu_wake_lock
 repository: https://github.com/dualskana/flu_wake_lock
 
