@@ -16,6 +16,8 @@ flutter pub add flu_wake_lock
 import 'package:flu_wake_lock/flu_wake_lock.dart';
 // ...
 
+FluWakeLock _fluWakeLock = FluWakeLock();
+
 // The following line will enable the Android and iOS wakelock.
 _fluWakeLock.enable();
 
