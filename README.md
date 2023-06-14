@@ -1,18 +1,24 @@
-# flu_wake_lock
+# flu_wake_lock [![Pub version](https://img.shields.io/pub/v/flu_wake_lock.svg)](https://pub.dev/packages/flu_wake_lock) [![GitHub stars](https://img.shields.io/github/stars/dualskana/flu_wake_lock.svg)](https://github.com/dualskana/flu_wake_lock) 
 
-A new Flutter plugin project.
 
-## Getting Started
+Plugin that allows you to keep the device screen awake, i.e. prevent the screen from sleeping
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+## Usage
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Install
+``` sh
+flutter pub add flu_wake_lock
+```
+### Implementation
 
-The plugin project was generated without specifying the `--platforms` flag, no platforms are currently supported.
-To add platforms, run `flutter create -t plugin --platforms <platforms> .` in this directory.
-You can also find a detailed instruction on how to add platforms in the `pubspec.yaml` at https://flutter.dev/docs/development/packages-and-plugins/developing-packages#plugin-platforms.
+
+```dart
+import 'package:flu_wake_lock/flu_wake_lock.dart';
+// ...
+
+// The following line will enable the Android and iOS wakelock.
+_fluWakeLock.enable();
+
+// The next line disables the wakelock again.
+_fluWakeLock.disable();
+```
